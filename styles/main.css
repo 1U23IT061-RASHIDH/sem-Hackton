@@ -1,0 +1,239 @@
+.home-layout {
+  width: min(1200px, calc(100% - 36px));
+  display: grid;
+  grid-template-columns: minmax(170px, 0.76fr) minmax(0, 2.1fr) minmax(205px, 0.9fr);
+  align-items: start;
+  gap: 26px;
+  padding: 34px 32px 38px;
+  margin: 0 auto;
+}
+
+.home-layout .main-content {
+  min-width: 0;
+}
+
+.home-photo {
+  float: left;
+  width: min(47%, 370px);
+  margin: 2px 21px 12px 0;
+  padding: 5px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.home-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-photo figcaption {
+  padding: 7px 4px 1px;
+  color: var(--muted);
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.home-followup {
+  clear: both;
+  padding-top: 8px;
+}
+
+.home-followup h2 {
+  margin-top: 22px;
+}
+
+.closing-note {
+  margin-bottom: 0;
+  padding-top: 4px;
+}
+
+.benefit-list {
+  margin: 0 0 17px;
+  padding-left: 25px;
+}
+
+.benefit-list li {
+  padding: 3px 0 3px 4px;
+}
+
+.benefit-list li::marker {
+  color: var(--leaf);
+  font-weight: 700;
+}
+
+.sidebar-a > p {
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.sidebar-b .side-links a {
+  padding: 7px 1px;
+  font-size: 0.9rem;
+}
+
+.facility-card,
+.testimonial-card {
+  margin-top: 19px;
+  padding-top: 15px;
+  border-top: 1px solid #d5ddd0;
+}
+
+.facility-card h2,
+.testimonial-card h2 {
+  margin: 0 0 9px;
+  font-size: 1.18rem;
+}
+
+.facility-list {
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  list-style: none;
+}
+
+.facility-list li {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+  padding: 5px 0;
+}
+
+.facility-list .facility-list-text {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.facility-list img {
+  display: block;
+  width: 52px;
+  height: 40px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.testimonial-card blockquote {
+  margin: 0;
+  padding: 11px 12px;
+  border-left: 3px solid var(--leaf);
+  background: #eef2e8;
+}
+
+.testimonial-card blockquote p {
+  margin: 0 0 8px;
+  color: #465345;
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.testimonial-card blockquote footer {
+  color: var(--muted);
+  font-size: 0.76rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 991.98px) {
+  .home-layout {
+    grid-template-columns: minmax(0, 1.8fr) minmax(195px, 1fr);
+    gap: 24px;
+    padding: 30px 28px 34px;
+  }
+
+  .home-layout .main-content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .home-layout .sidebar-b {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .home-layout .sidebar-a {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    grid-template-columns: minmax(160px, 0.8fr) minmax(0, 1.8fr);
+    column-gap: 22px;
+  }
+
+  .home-layout .sidebar-a > h2 {
+    grid-column: 1 / -1;
+  }
+
+  .home-layout .sidebar-a > p {
+    margin-bottom: 0;
+  }
+
+  .home-layout .sidebar-a > h3 {
+    display: none;
+  }
+
+  .home-layout .sidebar-a .side-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 12px;
+  }
+
+  .home-layout .sidebar-a .side-links li + li {
+    border-top: 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .home-layout {
+    width: min(100% - 24px, 680px);
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    padding: 25px 22px 30px;
+  }
+
+  .home-layout .main-content,
+  .home-layout .sidebar-a,
+  .home-layout .sidebar-b {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .home-layout .main-content {
+    order: 1;
+  }
+
+  .home-layout .sidebar-a {
+    display: block;
+    order: 2;
+  }
+
+  .home-layout .sidebar-b {
+    order: 3;
+  }
+
+  .home-layout .sidebar-a > h3 {
+    display: block;
+  }
+
+  .home-layout .sidebar-a .side-links {
+    display: block;
+  }
+
+  .home-layout .sidebar-a .side-links li + li {
+    border-top: 1px solid #dce2d7;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .home-layout {
+    width: 100%;
+    padding: 22px 18px 26px;
+  }
+
+  .home-photo {
+    float: none;
+    width: 100%;
+    margin: 0 0 16px;
+  }
+
+}

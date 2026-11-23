@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore resort rooms, gardens, dining and poolside moments in the Green Valley Resort gallery.">
+  <title>Resort Gallery | Green Valley Resort</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/content.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">GV</span>
+          <span class="brand-copy">
+            <span class="brand-name">Green Valley Resort</span>
+            <span class="tagline">A peaceful escape into nature</span>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark resort-nav" aria-label="Main navigation">
+      <div class="container-fluid nav-inner">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="menu-label">MENU</span>
+        </button>
+        <div class="collapse navbar-collapse" id="primaryNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html" aria-current="page">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="pdf/resort-brochure.pdf" target="_blank" rel="noopener noreferrer">Get Brochure</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content-layout">
+      <aside class="sidebar">
+        <h2>Additional Resources</h2>
+        <ul class="side-links resource-links">
+          <li><a href="#audio-tour">Audio Tour</a></li>
+          <li><a href="#resort-map">Resort Map</a></li>
+          <li><a href="pdf/resort-brochure.pdf" target="_blank" rel="noopener noreferrer">Brochure (PDF)</a></li>
+        </ul>
+        <div class="sidebar-note">
+          <p class="home-link"><a href="index.html">Return to Home</a></p>
+          <h3>Explore more</h3>
+          <ul class="side-links">
+            <li><a href="rooms.html">Rooms &amp; Resort Information</a></li>
+            <li><a href="rooms.html#experiences">Resort Experiences</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <h1>Resort Gallery</h1>
+        <p class="lead">Take a look around Green Valley Resort, from welcoming rooms to peaceful garden corners.</p>
+
+        <section class="gallery-carousel-section" aria-labelledby="gallery-carousel-title">
+          <h2 id="gallery-carousel-title">Resort Highlights</h2>
+          <div class="resort-carousel gallery-carousel carousel slide" id="resortGalleryCarousel" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover" aria-label="Featured resort images">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#resortGalleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show resort exterior"></button>
+              <button type="button" data-bs-target="#resortGalleryCarousel" data-bs-slide-to="1" aria-label="Show guest room"></button>
+              <button type="button" data-bs-target="#resortGalleryCarousel" data-bs-slide-to="2" aria-label="Show swimming pool"></button>
+              <button type="button" data-bs-target="#resortGalleryCarousel" data-bs-slide-to="3" aria-label="Show garden"></button>
+              <button type="button" data-bs-target="#resortGalleryCarousel" data-bs-slide-to="4" aria-label="Show restaurant"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/resort-exterior.jpg" class="d-block w-100" alt="Green Valley Resort exterior beside its outdoor swimming pool at dusk">
+                <div class="carousel-caption">
+                  <h2>A warm welcome</h2>
+                  <p>Discover the peaceful setting of Green Valley Resort.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/guest-room.jpg" class="d-block w-100" alt="Warm timber guest room with a large comfortable bed">
+                <div class="carousel-caption">
+                  <h2>A restful room</h2>
+                  <p>Settle into a comfortable space for your stay.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/swimming-pool.jpg" class="d-block w-100" alt="Outdoor swimming pool with a rock waterfall and tropical greenery">
+                <div class="carousel-caption">
+                  <h2>Refresh by the pool</h2>
+                  <p>Take a swim or enjoy a relaxed afternoon outdoors.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/unnamed.jpg" class="d-block w-100" alt="Green lawn with stepping stones and landscaped resort gardens">
+                <div class="carousel-caption">
+                  <h2>Explore the gardens</h2>
+                  <p>Follow the stepping stones through the green grounds.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/restaurant.jpg" class="d-block w-100" alt="Resort restaurant dining room arranged for guests">
+                <div class="carousel-caption">
+                  <h2>Gather over a meal</h2>
+                  <p>Enjoy time together in the resort dining room.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#resortGalleryCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#resortGalleryCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="gallery-grid" aria-label="Green Valley Resort photo gallery">
+          <figure class="gallery-card">
+            <img src="images/resort-exterior.jpg" alt="Green Valley Resort exterior beside its outdoor swimming pool at dusk">
+            <figcaption>Evenings by the pool</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/swimming-pool.jpg" alt="Outdoor pool with a rock waterfall and tropical greenery">
+            <figcaption>Refresh in the pool</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/guest-room.jpg" alt="Guest room with a comfortable bed and warm timber finishes">
+            <figcaption>A restful guest room</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/reception.jpg" alt="Warmly lit resort reception lounge with comfortable seating">
+            <figcaption>A warm welcome</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/garden.jpg" alt="Garden seating beneath a leafy pergola at night">
+            <figcaption>A quiet garden evening</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/unnamed.jpg" alt="Garden lawn with a stepping-stone path and resort landscaping">
+            <figcaption>Walk among the gardens</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/restaurant.jpg" alt="Resort restaurant dining room set for a gathering">
+            <figcaption>Gather over a meal</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/parking.jpg" alt="Paved arrival court in front of the resort entrance">
+            <figcaption>Resort arrival court</figcaption>
+          </figure>
+        </section>
+
+        <section class="resource-details" aria-label="Gallery resources">
+          <section class="audio-guide-panel" id="audio-tour" aria-labelledby="audio-guide-title">
+            <div class="audio-guide-heading">
+              <span class="audio-guide-icon" aria-hidden="true">♫</span>
+              <div>
+                <h2 id="audio-guide-title">Listen to Nature &ndash; Green Valley Resort</h2>
+                <p class="audio-guide-subtitle">Relax to forest ambience and imagine a quiet moment among the resort's leafy surroundings.</p>
+              </div>
+            </div>
+            <p class="audio-guide-description">Listen to a public-domain forest ambience recording. It is a nature soundscape, not a spoken resort narration.</p>
+            <audio class="nature-audio" controls preload="none">
+              <source src="audio/forest-ambience.ogg" type="audio/ogg">
+              Your browser does not support audio.
+            </audio>
+            <p class="audio-credit">Recording by nille, released into the public domain. <a href="https://commons.wikimedia.org/wiki/File:20090610_0_ambience.ogg" target="_blank" rel="noopener noreferrer">View the Wikimedia Commons source and license</a>.</p>
+            <details class="audio-transcript">
+              <summary>Read the audio guide narration</summary>
+              <div>
+                <p>Welcome to Green Valley Resort, a peaceful escape created for a little more rest, fresh air and time together.</p>
+                <p>Set in a tranquil natural setting, the resort invites you to slow down among leafy gardens and welcoming outdoor spaces. No specific street address or location has been supplied yet.</p>
+                <p>Our comfortable rooms offer a calm place to settle in and recharge, with welcoming details for a restful stay.</p>
+                <p>When it is time to gather, enjoy the resort's dining spaces and share a relaxed meal with family and friends.</p>
+                <p>Spend an afternoon by the swimming pool, take a refreshing swim or enjoy other leisurely recreational activities around the resort.</p>
+                <p>For a quieter moment, follow the garden paths, enjoy the natural surroundings and find a comfortable place to unwind.</p>
+                <p>For current special experiences, availability and booking information, visit our <a href="contact.html">Contact Us</a> page. We look forward to welcoming you to Green Valley Resort.</p>
+              </div>
+            </details>
+          </section>
+          <section class="resort-map-panel" id="resort-map" aria-labelledby="resort-map-title">
+            <div class="resort-map-heading">
+              <h2 id="resort-map-title">Explore Our Resort</h2>
+              <span class="map-scale-badge">Illustrative &middot; Not to scale</span>
+            </div>
+            <p class="map-notice">The live map uses the destination in your supplied Google Maps route: Darza Luxury Resorts, Coimbatore. The separate resort-area diagram below is illustrative and is not a surveyed site plan.</p>
+            <div class="live-map-frame">
+              <iframe
+                title="Google Maps showing the supplied Darza Luxury Resorts destination in Coimbatore"
+                src="https://maps.google.com/maps?q=11.0921719%2C76.9018089&amp;z=15&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p class="map-actions">
+              <a class="resource-button" href="https://www.google.com/maps/dir/11.027027,77.135866/Darza+Luxury+Resorts,+Door+No.1,+356,+SF+No.470%2F4,+22+-+Nanjundapuram,+Coimbatore,+Tamil+Nadu+641017/@11.0430739,76.8540537,11z/data!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3ba8f5d7d41325a5:0x8756d304379894d8!2m2!1d76.9018089!2d11.0921719?entry=ttu&amp;g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Get Directions</a>
+            </p>
+            <ol class="resort-map-illustration" aria-label="Illustrative resort locations">
+              <li class="map-location map-location-entrance"><span class="map-marker" aria-hidden="true">1</span><img src="images/resort-exterior.jpg" alt="Resort exterior and landscaped entrance"><span>Main Entrance</span></li>
+              <li class="map-location map-location-reception"><span class="map-marker" aria-hidden="true">2</span><img src="images/reception.jpg" alt="Warmly lit resort reception lounge"><span>Reception</span></li>
+              <li class="map-location map-location-rooms"><span class="map-marker" aria-hidden="true">3</span><img src="images/guest-room.jpg" alt="Guest room with a comfortable bed"><span>Guest Rooms</span></li>
+              <li class="map-location map-location-restaurant"><span class="map-marker" aria-hidden="true">4</span><img src="images/restaurant.jpg" alt="Resort dining room prepared for guests"><span>Restaurant</span></li>
+              <li class="map-location map-location-pool"><span class="map-marker" aria-hidden="true">5</span><img src="images/swimming-pool.jpg" alt="Outdoor swimming pool with a rock waterfall"><span>Swimming Pool</span></li>
+              <li class="map-location map-location-garden"><span class="map-marker" aria-hidden="true">6</span><img src="images/garden.jpg" alt="Garden seating beneath a leafy pergola"><span>Garden</span></li>
+              <li class="map-location map-location-parking"><span class="map-marker" aria-hidden="true">7</span><img src="images/parking.jpg" alt="Paved arrival court in front of the resort entrance"><span>Parking Area</span></li>
+              <li class="map-location map-location-nature"><span class="map-marker" aria-hidden="true">8</span><img src="images/nature-walk.jpg" alt="Leafy garden path beside the resort seating area"><span>Nature Walk Area</span></li>
+            </ol>
+            <p class="map-caption">The displayed arrangement is illustrative and does not indicate real distances, entrances or walking routes.</p>
+          </section>
+          <div id="brochure">
+            <h2>Brochure (PDF)</h2>
+            <p>Read or save the Green Valley Resort brochure.</p>
+            <div class="brochure-actions">
+              <a class="resource-button" href="pdf/resort-brochure.pdf" target="_blank" rel="noopener noreferrer">Open Brochure</a>
+              <a class="resource-button secondary" href="pdf/resort-brochure.pdf" download>Download PDF</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>&copy; 2026 Green Valley Resort <span aria-hidden="true">|</span> A peaceful escape into nature</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
